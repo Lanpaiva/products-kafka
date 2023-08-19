@@ -6,6 +6,7 @@ type ProductRepository interface {
 	Create(product *Product) error
 	FindAll() ([]*Product, error)
 }
+
 type Product struct {
 	ID    string
 	Name  string
